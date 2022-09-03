@@ -40,20 +40,18 @@ header {
   justify-content: space-between;
   z-index: 999;
 
-  .toggler {
+  input {
+    display: none;
     position: absolute;
+  }
 
-    input {
-      display: none;
-    }
-
-    label {
-      font-size: 2rem;
-      color: $primary-color;
-      cursor: pointer;
-      visibility: hidden;
-      opacity: 0;
-    }
+  label {
+    position: absolute;
+    font-size: 30px;
+    color: $primary-color;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .navbar {
@@ -199,12 +197,13 @@ header {
     .city-group-1 {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 100%;
 
       h2 {
         font-size: 32px;
         font-weight: 400;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
       }
 
       .group-1-img {
@@ -513,6 +512,16 @@ footer {
       }
     }
   }
+
+  .cities-section {
+    .city-content {
+      .city-group-1 {
+        h2 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -521,12 +530,10 @@ footer {
   }
 
   header {
-    .toggler {
+    label {
       position: static;
-      label {
-        visibility: visible;
-        opacity: 1;
-      }
+      visibility: visible;
+      opacity: 1;
     }
 
     .navbar {
@@ -535,7 +542,7 @@ footer {
       left: 0;
       width: 100%;
       background: #fff;
-      padding: 1rem 2rem;
+      padding: 16px 32px;
       border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       transform-origin: top;
@@ -545,12 +552,14 @@ footer {
 
       a {
         display: block;
-        margin: 2rem 0;
-        font-size: 2rem;
+        margin: 16px 0;
+        font-size: 24px;
+        text-align: center;
       }
 
       .nav-button-mobile {
         display: block;
+        font-size: 24px;
       }
     }
 
@@ -599,6 +608,7 @@ footer {
 
         h2 {
           margin-bottom: 0;
+          font-size: 32px;
         }
       }
 

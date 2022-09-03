@@ -40,16 +40,14 @@ header {
   z-index: 999;
 }
 
-header .toggler {
+header input {
+  display: none;
   position: absolute;
 }
 
-header .toggler input {
-  display: none;
-}
-
-header .toggler label {
-  font-size: 2rem;
+header label {
+  position: absolute;
+  font-size: 30px;
   color: #1f4aa8;
   cursor: pointer;
   visibility: hidden;
@@ -220,13 +218,16 @@ header .nav-button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
 .cities-section .city-content .city-group-1 h2 {
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .cities-section .city-content .city-group-1 .group-1-img {
@@ -610,16 +611,17 @@ footer .copyright p a:hover {
     font-size: 14px;
     padding: 0 10px;
   }
+  .cities-section .city-content .city-group-1 h2 {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 991px) {
   section {
     padding: 0 3%;
   }
-  header .toggler {
+  header label {
     position: static;
-  }
-  header .toggler label {
     visibility: visible;
     opacity: 1;
   }
@@ -629,7 +631,7 @@ footer .copyright p a:hover {
     left: 0;
     width: 100%;
     background: #fff;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -643,11 +645,13 @@ footer .copyright p a:hover {
   }
   header .navbar a {
     display: block;
-    margin: 2rem 0;
-    font-size: 2rem;
+    margin: 16px 0;
+    font-size: 24px;
+    text-align: center;
   }
   header .navbar .nav-button-mobile {
     display: block;
+    font-size: 24px;
   }
   header input:checked ~ .navbar {
     -webkit-transform: scaleY(1);
@@ -693,6 +697,7 @@ footer .copyright p a:hover {
   }
   .cities-section .city-content .city-group-1 h2 {
     margin-bottom: 0;
+    font-size: 32px;
   }
   .cities-section .city-content .city-group-2 {
     width: 49%;
