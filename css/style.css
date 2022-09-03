@@ -671,6 +671,21 @@ footer .copyright p a:hover {
   .cities-section .city-content .city-group-1 h2 {
     font-size: 26px;
   }
+  .stories-section .story-content .img-group-1 {
+    width: 20%;
+  }
+  .stories-section .story-content .img-group-1 img {
+    width: 100%;
+  }
+  .stories-section .story-content .story {
+    width: 50%;
+  }
+  .stories-section .story-content .img-group-2 {
+    width: 20%;
+  }
+  .stories-section .story-content .img-group-2 img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) {

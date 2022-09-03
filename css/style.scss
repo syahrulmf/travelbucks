@@ -564,6 +564,30 @@ footer {
       }
     }
   }
+
+  .stories-section {
+    .story-content {
+      .img-group-1 {
+        width: 20%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .story {
+        width: 50%;
+      }
+
+      .img-group-2 {
+        width: 20%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
